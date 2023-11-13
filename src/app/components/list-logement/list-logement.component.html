@@ -1,0 +1,9 @@
+<div class="container">
+        <div *ngFor="let logement of logementList" class='card-logement-container'>
+       
+                <div class='image-content' (click)="goToLogement(logement.id)">
+                        <h1 class='card-logement__title'>{{logement.title}}</h1>
+                        <img class='image' src="{{logement.cover}}"  alt={{logement.cover}} />
+                </div> 
+        </div>
+</div>
