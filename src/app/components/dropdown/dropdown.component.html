@@ -1,0 +1,8 @@
+<div clas="dropdown">
+        <div class="dropdown-title">
+          <span></span><span class='collapse' (click)="setIsOpen(!isOpen)"><img src="../../../assets/img/collapse.svg" alt="" /></span>
+        </div>
+          <div *ngIf="isOpen" class="dropdown-content">
+                contenu
+          </div>
+</div>
