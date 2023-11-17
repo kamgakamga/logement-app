@@ -1,8 +1,8 @@
-<app-baniere></app-baniere>
+<app-baniere [imagePath]="imageBaniere" [baniereMessage]=""></app-baniere>
 <div class="container">
         <div *ngFor="let logement of logementList" class='card-logement-container'>
        
-                <div class='image-content' (click)="goToLogement(logement.id)">
+                <div class='image-content' (click)="goToLogement(logement)">
                         <h1 class='card-logement__title'>{{logement.title}}</h1>
                         <img class='image' src="{{logement.cover}}"  alt={{logement.cover}} />
                 </div> 

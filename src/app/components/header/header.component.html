@@ -5,8 +5,9 @@
         </div>
         <ul class='menu'>
                 <!-- {/* <li class='menu__item' (click)="onUnderline()">Accueil</li> */} -->
-                <a routerLink Link to="/"><li class="menu__item" >Accueil</li></a>
-                <a routerLink to="/a-propos" ><li class='menu__item'>A propos</li></a>
+                <a routerLink to="/"><li class="menu__item" >Accueil</li></a>
+                <a (click)="goToAProposPage()" ><li class='menu__item'>A propos</li></a>
+                <!-- <a routerLink to="logement/apropos" ><li class='menu__item'>A propos</li></a> -->
         </ul>
      </nav>
 </div>

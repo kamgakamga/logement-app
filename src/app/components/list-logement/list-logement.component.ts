@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { IMAGE_BANNIERE_PRINCIPALE } from 'src/app/constante';
 import Logement from 'src/app/models/logement';
 import { LogementService } from 'src/app/services/logement.service';
 
@@ -14,9 +15,10 @@ export class ListLogementComponent implements OnInit {
 /****************************** Déclaration des attributs *****************/
 logementList: Logement[] ;
 logementSelected: Logement|undefined;
+public imageBaniere: string = IMAGE_BANNIERE_PRINCIPALE;
 
 
-  constructor(private router:Router, private logementService:LogementService) { }
+  constructor(private router:Router,private route:ActivatedRoute, private logementService:LogementService) { }
 
   ngOnInit(): void {
     this.logementService.getLogementList().subscribe(logementList =>{this.logementList = logementList});
@@ -26,12 +28,10 @@ logementSelected: Logement|undefined;
 
 
   goToLogement(logement: Logement):void{
- 
-    //On redirige vers la page d'acceuil
-    console.log(logement.cover);
-    
-        this.router.navigate(['/logement/', logement.id]);
-
+    //On redirige vers la page d'acceuil 
+       
+    console.log("logement d'id:"+logement);
+    this.router.navigate(['/logement/', logement.id]);
  }
 
 }

@@ -1,1 +1,4 @@
-<p>apropos works!</p>
+<app-baniere class="auteur" [imagePath]="imageBaniereApropos" [baniereMessage]="baniereMessage"></app-baniere>
+<div class="container-option" *ngFor="let data of dataApropos">
+   <app-dropdown [title]="data.title" [content]="data.content"></app-dropdown>
+</div>
