@@ -12,6 +12,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { BaniereComponent } from './components/baniere/baniere.component';
 import { AproposComponent } from './components/apropos/apropos.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
+import { TagComponent } from './components/tag/tag.component';
+import { DetailLogementComponent } from './components/detail-logement/detail-logement.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { AproposComponent } from './components/apropos/apropos.component';
     BaniereComponent,
     AproposComponent,
     HeaderComponent,
+    DropdownComponent,
+    DetailLogementComponent,
+    AvatarComponent,
+    TagComponent,
     FooterComponent,
     PageNotFoundComponent,
     ListLogementComponent
