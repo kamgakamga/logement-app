@@ -1,6 +1,6 @@
 .dropdown{
         margin: 20px 0;
-        background-color: #F5F5F5;
+        background-color: #f5f5f5;
         border-radius: 10px;
      }
      
@@ -31,3 +31,8 @@
              transform: rotateY(30);
                 cursor: pointer;
      }
+
+     .equipement__item{
+        text-decoration: none;
+        list-style: none;
+        }

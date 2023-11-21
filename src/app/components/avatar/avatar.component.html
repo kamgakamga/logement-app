@@ -2,10 +2,10 @@
         <div class='avatar-content' >
           <h3 class='host__name'>{{host?.name}}</h3>
           <div class="host__picture__content">
-              <img class='host__picture' src={{host.picture}} alt={{host.name}} />
+              <img class='host__picture' [src]="host.picture" [alt]="host.name" />
           </div>
         </div>
-        <div>
+        <div class="star">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>

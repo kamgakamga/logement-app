@@ -1,8 +1,28 @@
 <div class="dropdown">
-        <div class="dropdown-title">
-          <span>{{title}}</span><span class='collapse' (click)="setIsOpen(!isOpen)"><img [src]="dropdownImage" [alt]="'Image de: '+dropdownImage" /></span>
-        </div>
-          <div *ngIf="isOpen" class="dropdown-content">
-                {{content}}
-          </div>
+  <div *ngIf="type == 0">
+    <div class="dropdown-title">
+      <span>{{ title }}</span
+      ><span class="collapse" (click)="setIsOpen(!isOpen)"
+        ><img [src]="dropdownImage" [alt]="'Image de: ' + dropdownImage"
+      /></span>
+    </div>
+    <div *ngIf="isOpen" class="dropdown-content">
+      {{ content }}
+    </div>
+  </div>
+
+  <div *ngIf="type == 1">
+    <div class="dropdown-title">
+          <span>{{title}}</span>
+          <span class='collapse' (click)="setIsOpen(!isOpen)">
+            <img [src]="dropdownImage" [alt]="'Image de: ' + dropdownImage" />
+          </span>
+     </div>
+      <div *ngIf="isOpen" class="dropdown-content">
+              <ul>
+                  <li  *ngFor="let item of content" class='equipement__item'>{{item}}</li>
+              </ul>
+      </div>
+  </div>
+
 </div>

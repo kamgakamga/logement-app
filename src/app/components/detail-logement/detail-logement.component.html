@@ -9,10 +9,8 @@
           <h2 class="text__name">{{ logement.title }}</h2>
           <p class="text__localisation">{{ logement.location }}</p>
         </div>
-        <div class="tag-section">
-          <!-- {logement.tags.map((tag, index) => (<Tag key={index} tag={tag} />
-                                                  
-                                                  ))} -->
+        <div *ngFor="let tag of logement.tags" class="tag-section">
+             <app-tag [tag]="tag" ></app-tag>
         </div>
       </div>
       <div class="avatar-section">
@@ -24,11 +22,16 @@
         <app-dropdown
           [title]="descriptionTitle"
           [content]="logement.description"
+          [type]="0"
         ></app-dropdown>
       </span>
-     <span class='description'>
-                           <!-- <Equipement title={{equipement}}  contenu={{logement.equipments}} /> -->
-                        </span> 
+      <span class="description">
+        <app-dropdown
+          [title]="equipementTitle"
+          [content]="logement.equipments"
+          [type]="1"
+        ></app-dropdown>
+      </span>
     </div>
   </div>
 </div>

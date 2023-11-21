@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DESCRIPTION_TITLE } from 'src/app/constante';
+import { DESCRIPTION_TITLE, EQUIPEMENT_TITLE } from 'src/app/constante';
 import Logement from 'src/app/models/logement';
 import { LogementService } from 'src/app/services/logement.service';
 
@@ -12,7 +12,7 @@ import { LogementService } from 'src/app/services/logement.service';
 export class DetailLogementComponent implements OnInit {
   public logement: Logement | undefined;
   public descriptionTitle: string = DESCRIPTION_TITLE;
-  // public logement: Observable<Logement|undefined>;
+  public equipementTitle: string = EQUIPEMENT_TITLE;
   constructor(
     private route: ActivatedRoute,
     private logementService: LogementService

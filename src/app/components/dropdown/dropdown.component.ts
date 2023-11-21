@@ -10,7 +10,9 @@ export class DropdownComponent  implements OnInit {
 
            public dropdownImage:string = IMAGE_COLLAPSE_DOWN;
   @Input() public title:string;
-  @Input() public content:string;
+  // @Input() public content:any;
+  @Input() public content:string|string[];
+  @Input() public type:number;
 
     public isOpen:boolean=false;
 
