@@ -3,6 +3,7 @@ export const IMAGE_BANNIERE_A_PROPOS = "../assets/img/kalen-emsley-Bkci_8qcdvQ-u
 export const IMAGE_COLLAPSE_DOWN = "../assets/img/collapse.svg";  
 export const IMAGE_COLLAPSE_UP = "../assets/img/collapse (2).svg";  
 export const DESCRIPTION_TITLE = "Description";  
+export const EQUIPEMENT_TITLE = "Equipements";   
 export const APROPOS_DATE = [
    {
         "title":"Fiabilité",
