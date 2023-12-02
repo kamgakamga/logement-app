@@ -17,11 +17,9 @@
         </div>
       </div>
       <div class="avatar-section">
-        <app-avatar [host]="logement.host"></app-avatar>
+        <app-avatar class="avatar" [host]="logement.host"></app-avatar>
       </div>
     </div>
-
-
     <div class="logement-details">
       <span class="description">
         <app-dropdown
@@ -41,4 +39,7 @@
     
   </div>
 </div>
-<div *ngIf="!logement">Aucun logement a afficher !</div>
+<div *ngIf="!logement">
+   <p class="aucun_pokemon">Aucun logement a afficher !</p>
+   <!-- <p class="retour">Retour</p> -->
+</div>

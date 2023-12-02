@@ -1,7 +1,21 @@
 .container-option{
-        width: 85%;
+        width: 90%;
         align-content: center;
-        padding-left: 7.5%;
+        /* padding-left: 7.5%; */
          /* display: flex;  */
         /* justify-content: center; */
+}
+
+.apropos-data{
+        /* background-color: #ddd6d6; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+        .container-option{
+                width: 100%;
+        }
+        
 }

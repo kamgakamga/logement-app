@@ -10,7 +10,6 @@
         justify-content: space-between;
 }
 
-
 .avatar-section{
         width: 50%;
 }
@@ -59,14 +58,45 @@
         width: 47%;
 }
 
+.aucun_pokemon{
+
+        text-align: center;
+        font-weight: bold;
+        font-size: 100px;
+        height: 500px;
+        color: #FF6060;
+}
+
 
 @media screen and (max-width: 768px) {
-  
+.avatar__tag__section{    
+        flex-direction: column;       
+}
 .logement-details{
  flex-wrap: wrap;
 }
 .description{
         width: 100%;
-}     
+}    
+.text__name{
+        font-size: 18px;
+    } 
+.tag-blog{
+        flex-wrap: wrap;
+        display: flex;
+        /* background-color: blueviolet; */
+        align-items: center;
+        justify-content: center;
+}
+.text{
+        width: 100%;
+}
+.tag-section{
+    justify-content: start ;   
+    width: 100%;
+}
+.avatar-section{
+        width: 100%;
+}
 
 }

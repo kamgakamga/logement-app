@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
-  public isSelected:boolean= true
+  public isAcceil:boolean= true
+  public isApropos:boolean= false
 
   constructor(private router:Router) { }
 
@@ -16,19 +17,17 @@ export class HeaderComponent {
   public goToAProposPage() :void {
     console.log("redirection vers la page A propos");
     this.router.navigate(['/logement/a-propos']);
-    if(this.isSelected){
-    this.isSelected = !this.isSelected;
-    }else{
-      this.isSelected = true;
+    if(this.isAcceil){
+    this.isApropos = true;
+    this.isAcceil = false;
     }
   }
   public  goToAccueilPage():void{
     console.log("redirection vers la page Acceuil");
     this.router.navigate(['/']);
-    if(!this.isSelected){
-       this.isSelected = true;
-    }else{
-      this.isSelected = false;
+    if(this.isApropos){
+       this.isAcceil = true;
+       this.isApropos = false;
     }
   }
 }

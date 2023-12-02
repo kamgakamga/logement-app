@@ -7,8 +7,8 @@
                 <!-- {/* <li class='menu__item' (click)="onUnderline()">Accueil</li> */} -->
                 <!-- <a routerLink to="/"><li class="menu__item" >Accueil</li></a> -->
                 <!-- <a [class.active]="isSelected"  routerLink to="/"><li class="menu__item" >Accueil</li></a> -->
-                <a [class.active]="isSelected"  (click)="goToAccueilPage()" ><li class='menu__item'>Accueil</li></a>
-                <a [class.active]="!isSelected" (click)="goToAProposPage()" ><li class='menu__item'>A propos</li></a>
+                <a [class.active]="isAcceil"  (click)="goToAccueilPage()" ><li class='menu__item'>Accueil</li></a>
+                <a [class.active]="isApropos" (click)="goToAProposPage()" ><li class='menu__item'>A propos</li></a>
                 <!-- <a routerLink to="logement/apropos" ><li class='menu__item'>A propos</li></a> -->
         </ul>
      </nav>
