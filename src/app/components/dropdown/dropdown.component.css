@@ -28,8 +28,9 @@
      }
      
      .collapse{
-             transform: rotateY(30);
-                cursor: pointer;
+             /* transform: rotateY(30); */
+             cursor: pointer;
+             transform: rotate(180deg);
      }
 
      .equipement__item{

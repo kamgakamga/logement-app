@@ -1,22 +1,27 @@
 <div *ngIf="logement" class="contaiiner">
   <div>
     <div>
-      <!-- <Gallery key={{logement.pictures.length}} pictures={{logement.pictures}} /> -->
+      <app-gallery [pictures]="logement.pictures"></app-gallery>
     </div>
+
     <div class="avatar__tag__section">
       <div class="tag-blog">
         <div class="text">
           <h2 class="text__name">{{ logement.title }}</h2>
           <p class="text__localisation">{{ logement.location }}</p>
         </div>
-        <div *ngFor="let tag of logement.tags" class="tag-section">
+        <div class="tag-section">
+           <span *ngFor="let tag of logement.tags">
              <app-tag [tag]="tag" ></app-tag>
+           </span>
         </div>
       </div>
       <div class="avatar-section">
         <app-avatar [host]="logement.host"></app-avatar>
       </div>
     </div>
+
+
     <div class="logement-details">
       <span class="description">
         <app-dropdown
@@ -33,6 +38,7 @@
         ></app-dropdown>
       </span>
     </div>
+    
   </div>
 </div>
 <div *ngIf="!logement">Aucun logement a afficher !</div>

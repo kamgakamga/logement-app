@@ -1,12 +1,14 @@
 <div class='header'>
      <nav class='header-container'>
         <div class='img-logo'>
-                <img src="../../../assets/img/logo-kasa.svg"  alt="logo kasa"/>
+                <img (click)="goToAccueilPage()" src="../../../assets/img/logo-kasa.svg"  alt="logo kasa"/>
         </div>
         <ul class='menu'>
                 <!-- {/* <li class='menu__item' (click)="onUnderline()">Accueil</li> */} -->
-                <a routerLink to="/"><li class="menu__item" >Accueil</li></a>
-                <a (click)="goToAProposPage()" ><li class='menu__item'>A propos</li></a>
+                <!-- <a routerLink to="/"><li class="menu__item" >Accueil</li></a> -->
+                <!-- <a [class.active]="isSelected"  routerLink to="/"><li class="menu__item" >Accueil</li></a> -->
+                <a [class.active]="isSelected"  (click)="goToAccueilPage()" ><li class='menu__item'>Accueil</li></a>
+                <a [class.active]="!isSelected" (click)="goToAProposPage()" ><li class='menu__item'>A propos</li></a>
                 <!-- <a routerLink to="logement/apropos" ><li class='menu__item'>A propos</li></a> -->
         </ul>
      </nav>

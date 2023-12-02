@@ -1,1 +1,13 @@
-<p>gallery works!</p>
+<div class='gallery'>
+        <div class='gallery__image'>
+           <img class='gallery__image__item' [src]="pictures[currentIndex]" alt="image" />
+        </div>
+        <div class='butom'>
+           <span class='previous' (click)="handlePrevious()">
+                <img [src]="previousImage" class='previous__image' alt="" />
+           </span>
+           <span class='next' (click)="handleNext()">
+                <img  class='next__image' [src]="nextImage" alt="" />
+           </span>
+         </div>
+</div>

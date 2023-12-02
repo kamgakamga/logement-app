@@ -16,6 +16,7 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { TagComponent } from './components/tag/tag.component';
 import { DetailLogementComponent } from './components/detail-logement/detail-logement.component';
+import {GalleryComponent}from './components/gallery/gallery.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DetailLogementComponent } from './components/detail-logement/detail-log
     TagComponent,
     FooterComponent,
     PageNotFoundComponent,
-    ListLogementComponent
+    ListLogementComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

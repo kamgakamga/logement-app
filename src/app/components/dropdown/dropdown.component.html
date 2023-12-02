@@ -2,7 +2,7 @@
   <div *ngIf="type == 0">
     <div class="dropdown-title">
       <span>{{ title }}</span
-      ><span class="collapse" (click)="setIsOpen(!isOpen)"
+      ><span [class.collapse]="rotationActive" (click)="setIsOpen(!isOpen)"
         ><img [src]="dropdownImage" [alt]="'Image de: ' + dropdownImage"
       /></span>
     </div>
@@ -10,11 +10,10 @@
       {{ content }}
     </div>
   </div>
-
   <div *ngIf="type == 1">
     <div class="dropdown-title">
           <span>{{title}}</span>
-          <span class='collapse' (click)="setIsOpen(!isOpen)">
+          <span [class.collapse]="rotationActive" (click)="setIsOpen(!isOpen)">
             <img [src]="dropdownImage" [alt]="'Image de: ' + dropdownImage" />
           </span>
      </div>

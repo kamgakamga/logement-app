@@ -13,6 +13,7 @@ export class DropdownComponent  implements OnInit {
   // @Input() public content:any;
   @Input() public content:string|string[];
   @Input() public type:number;
+  public rotationActive:boolean = true;
 
     public isOpen:boolean=false;
 
@@ -23,5 +24,6 @@ export class DropdownComponent  implements OnInit {
   
     setIsOpen = (param:boolean)=>{
       this.isOpen = param;
+      this.rotationActive = !this.rotationActive;
   }
 }

@@ -13,6 +13,7 @@ export class DetailLogementComponent implements OnInit {
   public logement: Logement | undefined;
   public descriptionTitle: string = DESCRIPTION_TITLE;
   public equipementTitle: string = EQUIPEMENT_TITLE;
+  
   constructor(
     private route: ActivatedRoute,
     private logementService: LogementService

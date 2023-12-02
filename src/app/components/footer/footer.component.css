@@ -2,10 +2,22 @@
         background-color: #000000;
         display: flex;
         width: 100%;
-        padding: 30px;
+        padding: 20px;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
         gap: 28.556px;
         color: #FFFFFF;
+}
+
+p{
+        margin: 0;
+        padding: auto;
+}
+
+@media screen and (max-width: 768px) {
+        .footer-container{
+                width: 92%;
+        }
+
 }

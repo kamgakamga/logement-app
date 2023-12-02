@@ -6,6 +6,7 @@
         justify-content: end;
         margin-right:1%;
         margin-bottom:10px;
+        margin-top: 10px;
         align-items: end;
 }
 
@@ -43,3 +44,6 @@
    object-position: center;
 }
 
+.star{
+        margin: 5px 0;
+}
